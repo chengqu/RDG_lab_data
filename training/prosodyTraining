@@ -36827,7 +36827,6 @@ seat silBefore@0 silAfter@high pitchSlope@3  pitcVariance@4  RMSPower@6 I
 brown silBefore@high silAfter@high pitchSlope@5  pitcVariance@7  RMSPower@6 I
 handle silBefore@high silAfter@0 pitchSlope@4  pitcVariance@7  RMSPower@6 I
 bars silBefore@0 silAfter@high pitchSlope@8  pitcVariance@6  RMSPower@6 I
-
 &lt;laughter&gt; silBefore@0 silAfter@0 pitchSlope@0  pitchVariance@0  RMSPower@0 B
 we silBefore@high silAfter@0 pitchSlope@5  pitcVariance@7  RMSPower@6 I
 ran silBefore@0 silAfter@0 pitchSlope@3  pitcVariance@9  RMSPower@6 I
