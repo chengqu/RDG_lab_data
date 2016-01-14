@@ -1,0 +1,69 @@
+public static void construct() throws IOException{
+		
+		xls = new FileInputStream("RDG_lab_data/result/comparison.xls");
+		workbook = new HSSFWorkbook(xls);
+		sheet = workbook.getSheetAt(0);
+		rowIterator = sheet.iterator();
+		row = rowIterator.next();
+		//Row row1 = rowIterator.next();
+		/*
+		row1.createCell(0).setCellValue("Human Segmentation");
+		row1.createCell(1).setCellValue("Prosody Segmentation");
+		
+		ArrayList<String> words = FileUtils.contentsOfTheFileAsList("RDG_lab_data/data/prosodyTest_0.1_only_unigram");
+		ArrayList<String> humanTags = FileUtils.contentsOfTheFileAsList("RDG_lab_data/result/prosody_0.1_tagged");
+		ArrayList<String> predictionTags = FileUtils.contentsOfTheFileAsList("RDG_lab_data/result/prosody_0.1_prediction");
+		
+		if(words.size() != humanTags.size() || humanTags.size() != predictionTags.size()){
+			return;
+		}
+		
+		String humanTagged = "[";
+		String predictionTagged = "[";
+		ArrayList<String> humanUtt = new ArrayList<String>();
+		ArrayList<String> predUtt = new ArrayList<String>();
+		
+		for(int i = 0; i < words.size(); i++){
+			if(humanTags.get(i).equals("B")){
+				humanTagged += words.get(i)+"]";
+				humanUtt.add(humanTagged);
+				humanTagged = "[";
+			} else if(humanTags.get(i).equals("I")){
+				humanTagged += " " + words.get(i) + " ";
+			}
+			if(predictionTags.get(i).equals("B")){
+				predictionTagged += words.get(i)+"]";
+				predUtt.add(predictionTagged);
+				predictionTagged = "[";
+			} else if(predictionTags.get(i).equals("I")){
+				predictionTagged += " " + words.get(i) + " ";
+			}
+		}
+		
+		int lineNum = 0;
+		while(lineNum < predUtt.size() && lineNum < humanUtt.size()){
+			row = rowIterator.next();
+			row.createCell(0).setCellValue(humanUtt.get(lineNum));
+			row.createCell(1).setCellValue(predUtt.get(lineNum));
+			//String line = humanUtt.get(lineNum) + "       " + predUtt.get(lineNum);
+			//FileUtils.writeToFileAlreadyExisting("RDG_lab_data/result/comparison", line);
+			lineNum ++;
+		}
+		while(lineNum < predUtt.size()){
+			row = rowIterator.next();
+			row.createCell(1).setCellValue(predUtt.get(lineNum));
+			//FileUtils.writeToFileAlreadyExisting("RDG_lab_data/result/comparison", predUtt.get(lineNum));
+			lineNum++;
+		}
+		while(lineNum < humanUtt.size()){
+			row = rowIterator.next();
+			row.createCell(0).setCellValue(humanUtt.get(lineNum));
+			//FileUtils.writeToFileAlreadyExisting("RDG_lab_data/result/comparison", humanUtt.get(lineNum));
+			lineNum++;
+		}
+		FileOutputStream out = 
+  	            new FileOutputStream(new File("RDG_lab_data/result/comparison.xls"));
+	            workbook.write(out);
+   				out.close();
+   				*/
+	}
